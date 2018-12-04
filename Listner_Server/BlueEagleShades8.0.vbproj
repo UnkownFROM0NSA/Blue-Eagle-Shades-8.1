@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5B67A36-E2C7-4760-B5C9-72D616D40ECD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BlueEagleShades8._0.My.MyApplication</StartupObject>
+    <RootNamespace>BlueEagleShades8._0</RootNamespace>
+    <AssemblyName>BlueEagleShades8.0</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BlueEagleShades8.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BlueEagleShades8.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SaherBlueEagle.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HackerTheme">
+      <HintPath>..\..\HackerTheme\bin\Release\HackerTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="ListviewTheme">
+      <HintPath>..\..\HackerTheme\bin\Release\ListviewTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsApplication1">
+      <HintPath>..\..\File Downloader\WindowsApplication1\bin\Debug\WindowsApplication1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bigbuilder.Designer.vb">
+      <DependentUpon>bigbuilder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bigbuilder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cap.Designer.vb">
+      <DependentUpon>cap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chat.Designer.vb">
+      <DependentUpon>chat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choosebuilder.Designer.vb">
+      <DependentUpon>choosebuilder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="choosebuilder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="CMD.Designer.vb">
+      <DependentUpon>CMD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CMD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP.Designer.vb">
+      <DependentUpon>CP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="downloaderbuilder.Designer.vb">
+      <DependentUpon>downloaderbuilder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="downloaderbuilder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm.Designer.vb">
+      <DependentUpon>fm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13.Designer.vb">
+      <DependentUpon>Form13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form13.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14.Designer.vb">
+      <DependentUpon>Form14.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form14.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15.Designer.vb">
+      <DependentUpon>Form15.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form15.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16.Designer.vb">
+      <DependentUpon>Form16.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form16.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form20.Designer.vb">
+      <DependentUpon>Form20.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form20.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form21.Designer.vb">
+      <DependentUpon>Form21.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form21.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form27.Designer.vb">
+      <DependentUpon>Form27.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form27.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun.Designer.vb">
+      <DependentUpon>Fun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gadget.Designer.vb">
+      <DependentUpon>gadget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gadget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="info.Designer.vb">
+      <DependentUpon>info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information.Designer.vb">
+      <DependentUpon>Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lan.Designer.vb">
+      <DependentUpon>Lan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="map.Designer.vb">
+      <DependentUpon>map.vb</DependentUpon>
+    </Compile>
+    <Compile Include="map.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniBuilder.Designer.vb">
+      <DependentUpon>MiniBuilder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MiniBuilder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="networkinfo.Designer.vb">
+      <DependentUpon>networkinfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="networkinfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pw.Designer.vb">
+      <DependentUpon>pw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REG.Designer.vb">
+      <DependentUpon>REG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regedit.Designer.vb">
+      <DependentUpon>Regedit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Regedit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rgv.Designer.vb">
+      <DependentUpon>rgv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rgv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s.Designer.vb">
+      <DependentUpon>s.vb</DependentUpon>
+    </Compile>
+    <Compile Include="s.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scanner.Designer.vb">
+      <DependentUpon>scanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Script.Designer.vb">
+      <DependentUpon>Script.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Script.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="smallbuild.Designer.vb">
+      <DependentUpon>smallbuild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="smallbuild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spa.Designer.vb">
+      <DependentUpon>spa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="spa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Text_Editor.Designer.vb">
+      <DependentUpon>Text_Editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Text_Editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bigbuilder.resx">
+      <DependentUpon>bigbuilder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cap.resx">
+      <DependentUpon>cap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chat.resx">
+      <DependentUpon>chat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choosebuilder.resx">
+      <DependentUpon>choosebuilder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMD.resx">
+      <DependentUpon>CMD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP.resx">
+      <DependentUpon>CP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="downloaderbuilder.resx">
+      <DependentUpon>downloaderbuilder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm.resx">
+      <DependentUpon>fm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13.resx">
+      <DependentUpon>Form13.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form15.resx">
+      <DependentUpon>Form15.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16.resx">
+      <DependentUpon>Form16.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form20.resx">
+      <DependentUpon>Form20.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form21.resx">
+      <DependentUpon>Form21.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form27.resx">
+      <DependentUpon>Form27.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun.resx">
+      <DependentUpon>Fun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gadget.resx">
+      <DependentUpon>gadget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information.resx">
+      <DependentUpon>Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lan.resx">
+      <DependentUpon>Lan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map.resx">
+      <DependentUpon>map.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniBuilder.resx">
+      <DependentUpon>MiniBuilder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="networkinfo.resx">
+      <DependentUpon>networkinfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pw.resx">
+      <DependentUpon>pw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REG.resx">
+      <DependentUpon>REG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regedit.resx">
+      <DependentUpon>Regedit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rgv.resx">
+      <DependentUpon>rgv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s.resx">
+      <DependentUpon>s.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scanner.resx">
+      <DependentUpon>scanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Script.resx">
+      <DependentUpon>Script.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="smallbuild.resx">
+      <DependentUpon>smallbuild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spa.resx">
+      <DependentUpon>spa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Text_Editor.resx">
+      <DependentUpon>Text_Editor.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\049.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\059.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\067.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\095.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\175.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1359145624_link_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abort.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-scan-monitor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block Mouse-Keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command_prompt %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command_prompt %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command_prompt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer 16x16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cryptdecrypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default URL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devils-rat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edittext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\get_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide_folder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet Explorer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_scripts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microphonehot %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microphonehot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mozilla Firefox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My-Computer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PCo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repair.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Safari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script_editor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scvhost.exe.config" />
+    <None Include="Resources\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sport_soccer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webcam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win-Command-Prompt-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win-Command-Prompt-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windowstaskhost.exe.config" />
+    <None Include="Resources\ش.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ش1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لل.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ي.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth-wallpapers-23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cam.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\BlueEagleShades_Rat_Victims\Lock.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serverwithoutcam.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServerCam.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svchost.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txhost.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SaherBlueEagle.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
